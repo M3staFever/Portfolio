@@ -1,0 +1,193 @@
+/*Fonts*/
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v9/KGBfwabt0ZRLA5W1ywjowcFQWMQCspC7UHJEZLrAxRI.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v9/KGBfwabt0ZRLA5W1ywjowUHdOuSHeh0r6jGTOGdAKHA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*Final Structure*/
+body{
+	box-sizing:border-box;
+	display:flex;
+	justify-content: center;
+	background: rgb(100, 200, 130);
+	animation-name:back;
+	animation-duration:9s;
+	
+	
+	
+	
+}
+
+h1{ /*Fabio Caldeira Portfolio*/
+	position:absolute;
+	top:20%;
+	font-family:'Dancing Script', 'Palatino Linotype', Courier;
+	font-size: 4em;
+	animation-name:text;
+	animation-duration:9s;
+}
+	/*Figures start*/
+.triangle{
+	position:absolute;
+	top:30%;
+	transform:rotateY(90deg);
+	width:0;
+	height:0;
+	border-top: 160px solid transparent;
+	border-bottom: 160px solid white;
+	border-left: 80px solid transparent;
+	border-right:80px solid transparent;
+	visibility:visible;
+	z-index:2;
+	animation-name:geom;
+	animation-duration:1s;
+	box-shadow: 0px 20px rgb(80,80,80);
+
+	
+}
+
+.square{
+	position:absolute;
+	top:50%;
+	transform:rotateY(90deg);
+	width:160px;
+	height:160px;
+	border:none;
+	background:rgba(118, 235, 45, 1);
+	visibility:visible;
+	z-index:3;
+	animation-name:geom;
+	animation-duration:1s;
+	animation-delay:1s;
+	box-shadow: 0px 20px 5px rgb(80,80,80);
+	
+	
+	
+}
+.circle{
+	position:absolute;
+	top:50%;
+	transform:rotateY(90deg);
+	width:160px;
+	height:160px;
+	border:none;
+	border-radius:100%;
+	background:rgb(243, 232, 83);
+	visibility:visible;
+	z-index:4;
+	animation-name:geom;
+	animation-duration:1s;
+	animation-delay:2s;
+	box-shadow: 0px 20px 5px rgb(80,80,80);
+	
+	
+	
+	
+}
+	/*Figures end*/
+	
+.Line{
+	position:absolute;
+	top:60%;
+	width:100%;
+	height:10px;
+	border:none;
+	background: black;
+	visibility:visible;
+	z-index:1;
+	animation-name:line;
+	animation-duration:9s;
+	
+}
+img{
+	
+	transform:rotateY(0deg);
+	width:160px;
+	height:160px;
+	border:thick solid black;
+	border-radius:100%;
+	visibility:visible;
+	animation-name:face;
+	animation-duration:6s;
+	box-shadow: 0px 20px 5px rgb(80,80,80);
+}
+a{
+	position:absolute;
+	top:50%;
+	z-index:5;
+	
+}
+
+/*Animation*/
+@keyframes geom{
+	50%{
+		transform:rotateY(0deg);
+	}
+	100%{
+		transform:rotateY(-90deg);
+	}
+	
+}
+
+@keyframes face{
+	0%, 50%{
+		transform:rotateY(90deg);	
+	}
+	100%{
+		transform:rotateY(0deg);
+	}
+		
+	
+}
+@keyframes line{
+	0%, 60%{
+		width:0;
+	}
+	100%{
+		width:100%;
+	}
+	
+	
+}
+@keyframes back{
+	/*0%, 60%{
+		background:rgb(150,150,150);
+	}*/
+	0%, 8%{
+		background:rgba(249, 130, 80, 1);
+	}
+	11%, 19%{
+		background: grey;
+	}
+	21%, 29%{
+		background:rgba(212, 113, 212, 1);
+	}
+	100%{
+		background: rgb(100, 200, 130);
+	}
+	
+	
+}
+@keyframes text{
+	0%, 60%{
+		color:transparent;
+	}
+	100%{
+		color: black;
+	}
+	
+	
+	
+}

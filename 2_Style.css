@@ -1,0 +1,366 @@
+/*Font Start*/
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v9/KGBfwabt0ZRLA5W1ywjowcFQWMQCspC7UHJEZLrAxRI.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'), url(https://fonts.gstatic.com/s/dancingscript/v9/KGBfwabt0ZRLA5W1ywjowUHdOuSHeh0r6jGTOGdAKHA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v15/yg0glPPxXUISnKUejCX4qfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(https://fonts.gstatic.com/s/oswald/v15/pEobIV_lL25TKBpqVI_a2w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+  
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJavyPXdneeGd26m9EmFSSWg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v7/dazS1PrQQuCxC3iOAJFEJUo2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*Font End*/
+
+/*Top Start*/
+
+.top h1{
+	position:fixed;
+	text-align:center;
+	top:0%;
+	left: 60%;
+	min-width: 300px;
+	width:600px;
+	font-family:'Dancing Script', 'Palatino Linotype', Courier;
+	font-size: 2.2em;
+	z-index: 1000;
+	animation-name:title;
+	animation-duration: 5s;
+
+	
+}
+.face{
+	top:0;
+	position:fixed;
+	left: 10%;
+	width:120px;
+	height:120px;
+	border:thick solid black;
+	border-radius:100%;
+	z-index: 1000;
+	animation-name:face;
+	animation-duration: 5s;
+	
+}
+.Line{
+	position:fixed;
+	top:10%;
+	left:0%;
+	width:100%;
+	height:5px;
+	border:none;
+	background: black;
+	z-index: 2;
+	animation-name:line;
+	animation-duration: 5s;
+	
+}
+.up{
+	position:fixed;
+	top:0%;
+	left:0%;
+	background: rgb(100, 200, 130);
+	width:100%;
+	height:10%;
+	z-index: 2;
+	animation-name:up;
+	animation-duration: 5s;
+	
+}
+
+.back{
+	position:fixed;
+	top:0%;
+	left:0%;
+	width:100%;
+	height:100%;
+	z-index:1;
+	background-image: url("./wall.jpg");
+	opacity:0.6;
+	animation-name:back;
+	animation-duration: 10s;
+	
+	
+}
+/*Top Bottom*/
+
+/*Head Start*/
+.Head{
+	border-left: 0.5em solid black;
+	border-right: 0.5em solid black;
+	position:absolute;
+	background-color: white;
+	top:10%;
+	left:25%;
+	display:grid;
+	width: 50%;
+	max-width:50%;
+	grid-template-rows: repeat(3, 10% 1fr) 10% 5%;
+	z-index:1;
+	animation-name:head;
+	animation-duration: 10s;
+
+	
+}
+.Head h1{
+	
+	text-align:center;
+	color: black;
+	height: 2em;
+	border: none;
+	position: static;
+	font-family:'Dancing Script', 'Palatino Linotype', Courier;
+	font-size:4em;
+	
+	
+} 
+p{
+	font-size:1em;
+	text-indent:10%;
+	padding: 0% 0% 10% 5%;
+	border-top: thin solid black;
+	vertical-align:middle;
+	font-family: 'Roboto Slab','Oswald', Times;
+
+	
+}
+
+.imga img{
+	float:left;
+	width:30%;
+	height:30%;
+	border: normal solid black;
+	border-radius: 20%;
+	box-shadow: 0px 8px 5px rgb(200,200,200);
+	margin: 2% 2% 2% 2%;
+	
+	
+}
+
+.links{
+	display: grid;
+	width: 50%;
+	grid-template-columns: repeat(3,1fr);
+	transform: translate(65%,-10%)
+}
+.links img{
+	width: 20%;
+	height: 20%;
+	
+}
+
+.bigger{
+	font-size: 2em;
+	
+	
+}
+
+.test{
+	height:35%;
+	width:100%;
+	display:grid;
+	justify-content:space-around;
+	grid-template-rows: repeat(3, 1fr);
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 50% 10%;
+	justify-items:center;
+	align-items:center;
+	transform: translate(0%,-150%);
+	padding-top:10%;
+	border-top: thin solid rgb(80,80,80);
+	
+}
+
+.test img{
+	transform: translate(5%,0%);
+	box-shadow: 0px 10px 5px black;
+	border-radius: 100%;
+	transform: scale(0.5,0,5);
+	
+	
+}
+
+.test p{
+	transform: translate(-2%,0%);
+	font-size:1.2em;
+	text-indent: 0%;
+	vertical-align:middle;
+	font-family: 'Roboto Slab','Oswald', Times;
+	float:left;
+	
+}
+.italic{
+	font-size:1.3em;
+	font-style: italic;
+}
+
+/*Head Bottom*/
+
+/*nav Start*/
+
+
+.nav{
+	position:fixed;
+	left:25%;
+	top: 0%;
+	width: 40%;
+	list-style-type:none;	
+	box-sizing:border-box;
+	display:grid;
+	grid-template-columns:repeat(4, 25%);
+	width: 40%;
+	height:10%;
+	max-width:50%;
+	z-index:1000;
+	animation-name:nav;
+	animation-duration: 7s;
+	align-items: center;
+	
+	
+	
+}
+.nav a{
+	left:0%;
+	height:100%;
+	text-align:center;
+	vertical-align:middle;
+	border: 2% solid black;
+	border-bottom: transparent;
+	background-color:rgb(100, 200, 130);
+	color: black;
+	font-family:'Dancing Script', 'Palatino Linotype', Courier;
+	font-size:1.5em;
+	text-decoration: none;
+	
+}
+
+.nav a:hover{
+	transform:scale(1.2,1.2);
+	
+}
+
+
+/*nav Bottom*/
+
+/*Animation Start*/  
+@keyframes face{
+	0%{
+	position:absolute;
+	transform:translateX(-80px);
+	left:50%;
+	top:50%;
+	z-index:5;
+	width:160px;
+	height:160px;
+	box-shadow: 0px 20px 5px rgb(80,80,80);
+	}
+	100%{
+	left: 10%;
+	width:120px;
+	height:120px;	
+		
+	}
+	
+}
+
+@keyframes up{
+	0%{
+		height:100%;
+	}
+	100%{
+		height:10%;
+	}
+	
+	
+}
+
+@keyframes line{
+	0%{
+		top:60%;
+		height:10px;
+	}
+	100%{
+		top:10%;
+		height:5px;
+	}
+}
+@keyframes title{
+	0%{
+		left: 50%;
+		transform:translateX(-500px);
+		font-size: 4em;
+		width: 1000px;
+		top:22%;
+	}
+	100%{
+		left:60%;
+		top:0%;
+		
+	}
+	
+}
+@keyframes nav{
+	0%, 75%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+@keyframes back{
+	0%, 50%{
+		opacity:0;
+	}
+	100%{
+		opacity:0,6;
+	}
+}
+@keyframes head{
+	0%,50%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+
+                                                                                                                                                                                                                                 
